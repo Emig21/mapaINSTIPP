@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Mapa Instipp</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- barra de navegación -->
     <section class="container-fluid">
             <div class="row justify-content-between align-items-center text-bg-primary">
@@ -24,12 +24,104 @@
     </section>
     
     <!-- cuerpo de página -->
-    <section class="container-fluid border border-danger border-2">
-        
-
+    <section class="container flex-grow-1 d-flex align-items-center justify-content-center">
+        <div class="row">
+            <div class="col-10">
+                <img src="img/mapa_principal.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-2 ">
+                <button type="button" class="btn btn-success btn-lg m-2" data-bs-toggle="modal" data-bs-target="#modal-bloquea">
+                    BLOQUE A
+                </button>
+                <button type="button" class="btn btn-info btn-lg m-2" data-bs-toggle="modal" data-bs-target="#modal-bloqueb">
+                    BLOQUE B
+                </button>
+                <button type="button" class="btn btn-warning btn-lg m-2" data-bs-toggle="modal" data-bs-target="#modal-bloquec">
+                    BLOQUE C
+                </button>
+                <button type="button" class="btn btn-danger btn-lg m-2" data-bs-toggle="modal" data-bs-target="#modal-bloqued">
+                    BLOQUE D
+                </button>
+            </div>
+        </div>
     </section>
 
-    <footer class="container-fluid border-top border-primary pt-3">
+    <!-- Modal -->
+    <div class="modal fade" id="modal-bloquea" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-bloqueb" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Bloque B</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-bloquec" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">bloque C</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/bloque c.png" class="img-thumbnail" alt="">
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-bloqued" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Bloque D</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    
+    <!-- pie de página -->
+    <footer class="container-fluid bg-primary text-white py-3 mt-auto">
         <div class="row justify-content-between align-items-center text-bg-primary">
             <div class="col-12 text-center">
                 <p class="mb-0">Derechos reservados terceroDesarrollo instipp @ochoa león</p>
