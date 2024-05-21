@@ -1,134 +1,334 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Mapa Instipp</title>
-</head>
-<body class="d-flex flex-column min-vh-100">
+  </head>
+  <body class="d-flex flex-column min-vh-100">
     <!-- barra de navegación -->
     <section class="container-fluid">
-            <div class="row justify-content-between align-items-center text-bg-primary">
-                <div class="col-12 col-lg-4 text-lg-start text-center mb-2 mb-lg-0">
-                    <img src="img/logo.png" class="img-thumbnail rounded-circle img-fluid" style="width: 100px; height: 100px;" alt="logo instipp">
-                    <span class="navbar-brand fs-2">¡Bienvenido!</span>
-                </div>
-                <div class="col-12 col-lg-4 text-center mb-2 mb-lg-0">
-                    <h1>Mapa Campus Ochoa León</h1>
-                </div>
-                <div class="col-12 col-lg-4 text-lg-end text-center">
-                    <span class="navbar-brand fs-3">¿Dónde desea dirigirse?</span>
-                </div>
-            </div>
-    </section>
-    
-    <!-- cuerpo de página -->
-    <section class="container flex-grow-1 d-flex align-items-center justify-content-center">
-        <div class="row">
-            <div class="col-lg-10 col-sm-12">
-                <img src="img/mapa_principal.png" class="img-fluid" alt="...">
-            </div>
-            <div class="col-lg-2 col-sm-12 text-center">
-                <button type="button" class="btn btn-success btn-lg m-2" data-bs-toggle="modal" data-bs-target="#modal-bloquea">
-                    BLOQUE A
-                </button>
-                <button type="button" class="btn btn-info btn-lg m-2" data-bs-toggle="modal" data-bs-target="#modal-bloqueb">
-                    BLOQUE B
-                </button>
-                <button type="button" class="btn btn-warning btn-lg m-2" data-bs-toggle="modal" data-bs-target="#modal-bloquec">
-                    BLOQUE C
-                </button>
-                <button type="button" class="btn btn-danger btn-lg m-2" data-bs-toggle="modal" data-bs-target="#modal-bloqued">
-                    BLOQUE D
-                </button>
-            </div>
+      <div
+        class="row justify-content-between align-items-center text-bg-primary"
+      >
+        <div class="col-12 col-lg-4 text-lg-start text-center mb-2 mb-lg-0">
+          <img
+            src="img/logo.png"
+            class="img-thumbnail rounded-circle img-fluid"
+            style="width: 100px; height: 100px"
+            alt="logo instipp"
+          />
+          <span class="navbar-brand fs-2">¡Bienvenido!</span>
         </div>
+        <div class="col-12 col-lg-4 text-center mb-2 mb-lg-0">
+          <h1>Mapa Campus Ochoa León</h1>
+        </div>
+        <div class="col-12 col-lg-4 text-lg-end text-center">
+          <span class="navbar-brand fs-3">¿Dónde desea dirigirse?</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- cuerpo de página -->
+    <section
+      class="container flex-grow-1 d-flex align-items-center justify-content-center"
+    >
+      <div class="row">
+        <div class="col-lg-10 col-sm-12">
+          <img src="img/mapa_principal.png" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-lg-2 col-sm-12 text-center">
+          <button
+            type="button"
+            class="btn btn-success btn-lg m-2"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-bloquea"
+          >
+            BLOQUE A
+          </button>
+          <button
+            type="button"
+            class="btn btn-info btn-lg m-2"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-bloqueb"
+          >
+            BLOQUE B
+          </button>
+          <button
+            type="button"
+            class="btn btn-warning btn-lg m-2"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-bloquec"
+          >
+            BLOQUE C
+          </button>
+          <button
+            type="button"
+            class="btn btn-danger btn-lg m-2"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-bloqued"
+          >
+            BLOQUE D
+          </button>
+        </div>
+      </div>
     </section>
 
     <!-- Modal -->
-    <div class="modal fade" id="modal-bloquea" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div
+      class="modal fade"
+      id="modal-bloquea"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <img src="img/bloque a.png" class="img-thumbnail" alt="">
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Bloque a</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/bloque a.png" class="img-thumbnail" alt="" />
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Aula</th>
+                  <th scope="col">Curso</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>5° Contabilidad</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>4° Soldadura</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>5° Soldadura</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>2° Mantenimiento</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Salir
+            </button>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
 
-    <div class="modal fade" id="modal-bloqueb" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div
+      class="modal fade"
+      id="modal-bloqueb"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
+          <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">Bloque B</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <img src="img/bloque b.png" class="img-thumbnail" alt="">
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/bloque b.png" class="img-thumbnail" alt="" />
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Aula</th>
+                  <th scope="col">Curso</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>29</td>
+                  <td>2° Eletromecánica</td>
+                </tr>
+                <tr>
+                  <td>30</td>
+                  <td>4° Eletromecánica</td>
+                </tr>
+                <tr>
+                  <td>31</td>
+                  <td>1° Eletromecánica</td>
+                </tr>
+                <tr>
+                  <td>32</td>
+                  <td>1° Software</td>
+                </tr>
+                <tr>
+                  <td>33</td>
+                  <td>4° Software</td>
+                </tr>
+                <tr>
+                  <td>34</td>
+                  <td>1° Software</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Salir
+            </button>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
 
-    <div class="modal fade" id="modal-bloquec" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div
+      class="modal fade"
+      id="modal-bloquec"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">bloque C</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <img src="img/bloque c.png" class="img-thumbnail" alt="">
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Bloque C</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/bloque c.png" class="img-thumbnail" alt="" />
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Aula</th>
+                  <th scope="col">Curso</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>35</td>
+                  <td>1° Mantenimiento <br> 3° Redes</td>
+                </tr>
+                <tr>
+                  <td>36</td>
+                  <td>4° Redes</td>
+                </tr>
+                <tr>
+                  <td>38</td>
+                  <td>3° Mantenimiento</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Salir
+            </button>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
 
-    <div class="modal fade" id="modal-bloqued" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div
+      class="modal fade"
+      id="modal-bloqued"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
+          <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">Bloque D</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <img src="img/bloque d.png" class="img-thumbnail" alt="">
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/bloque d.png" class="img-thumbnail" alt="" />
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Aula</th>
+                  <th scope="col">Curso</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>27</td>
+                  <td>3° Electromecánica</td>
+                </tr>
+                <tr>
+                  <td>28</td>
+                  <td>2° Redes </td>
+                </tr>
+                <tr>
+                  <td>Biblioteca</td>
+                  <td>4° Mantenimiento</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Salir
+            </button>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
 
-    
     <!-- pie de página -->
     <footer class="container-fluid bg-primary text-white py-3 mt-auto">
-        <div class="row justify-content-between align-items-center text-bg-primary">
-            <div class="col-12 text-center">
-                <p class="mb-0">Derechos reservados terceroDesarrollo instipp @ochoa león</p>
-            </div>
+      <div
+        class="row justify-content-between align-items-center text-bg-primary"
+      >
+        <div class="col-12 text-center">
+          <p class="mb-0">
+            Derechos reservados terceroDesarrollo instipp @ochoa león
+          </p>
         </div>
+      </div>
     </footer>
-    
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-</body>
+  </body>
 </html>
